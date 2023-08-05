@@ -40,7 +40,7 @@ const ProductSection = () => {
             )
           })}
         </Slider>
-        <div className="custom-pagination self-center gap-2 flex cursor-pointer py-2"></div>
+        <div className="custom-pagination justify-center gap-2 flex cursor-pointer py-2"></div>
       </section>
     </article>
   )
