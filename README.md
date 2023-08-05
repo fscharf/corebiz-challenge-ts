@@ -1,27 +1,55 @@
-# React + TypeScript + Vite
+# Corebiz Frontend Challenge V2
+**Corebiz Frontend Challenge V2** is a improved version from [Corebiz Frontend Challenge](https://github.com/fscharf/corebiz-challenge) with better code structure, mocked API responses, recent technologies as React, TypeScript and TailwindCSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Wallpaper](https://i.imgur.com/SEtHtM7.png)
 
-Currently, two official plugins are available:
+## Technologies
+- React
+- TypeScript
+- TailwindCSS
+- Vite
+- Eslint + Prettier
+- Axios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add products on minicart by clicking on `Comprar` button;
+- Open minicart by clicking on `Cart` icon button;
+- Remove products by clicking on `Trash` icon button;
+- Responsive layout;
+- Minicart have persistent data after reloading page;
+- Form validations in newsletter submission.
+###
 
-## Expanding the ESLint configuration
+**⚠️ IMPORTANT: Note that was necessary to "mock" API responses because the server is currently unavailable (CORS error, probably an issue with Heroku hosting). In this case, the API integration with Axios and service layers was implemented but commented to be viewed.**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
+- yarn
+- Node.js
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
+Clone the repository by following this instructions: [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+###
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Install dependencies by running:
+```bash
+yarn install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Start
+To run development server:
+
+```bash
+yarn dev
+```
+###
+
+Navigate into your browser and type `http://localhost:3000` to view code in action 😎
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
