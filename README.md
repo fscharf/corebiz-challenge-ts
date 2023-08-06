@@ -17,7 +17,8 @@
 - Remove products by clicking on `Trash` icon button;
 - Responsive layout;
 - Minicart have persistent data after reloading page;
-- Form validations in newsletter submission.
+- Form validations in newsletter submission;
+- Search products by typing anything on search bar.
 ###
 
 **⚠️ IMPORTANT: Note that was necessary to "mock" API responses because the server is currently unavailable (CORS error, probably an issue with Heroku hosting). In this case, the API integration with Axios and service layers was implemented but commented to be viewed.**

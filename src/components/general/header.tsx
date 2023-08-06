@@ -1,9 +1,9 @@
 import { Minicart } from 'components/minicart'
+import { SearchBar } from 'components/search'
 import { useMinicart } from 'hooks/use-minicart'
 import React from 'react'
 import {
   HiOutlineBars3,
-  HiOutlineMagnifyingGlass,
   HiOutlineShoppingCart,
   HiOutlineUser
 } from 'react-icons/hi2'
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <header className="sticky top-0 left-0 right-0 bg-neutral-100 flex justify-center z-50 shadow shadow-neutral-200">
-        <nav className="flex items-center max-w-[1024px] w-full py-4 gap-4 base:flex-col lg:flex-row base:px-4 lg:px-0 relative">
+        <nav className="flex items-center max-w-[1024px] w-full py-4 gap-4 base:flex-col lg:flex-row base:px-4 lg:px-0 relative justify-between">
           {isMobile ? (
             <button
               className="absolute top-6 left-4"
@@ -35,18 +35,7 @@ const Header = () => {
               alt="Corebiz Logo"
             />
           </button>
-          <div className="flex items-center py-2 border-b-2 border-b-neutral-400 w-full">
-            <input
-              placeholder="O que está procurando?"
-              type="text"
-              className="w-full"
-            />
-            <button className="flex items-center hover:text-neutral-500">
-              <span>
-                <HiOutlineMagnifyingGlass className="w-6 h-6" />
-              </span>
-            </button>
-          </div>
+          <SearchBar />
           <button
             className={`flex items-center whitespace-nowrap gap-2 hover:text-neutral-500 lg:opacity-100 transition-all duration-300 ${
               isMenuOpen && isMobile
